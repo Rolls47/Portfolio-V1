@@ -12,43 +12,43 @@
                 <td>{{ job.id }}</td>
             </tr>
             <tr>
-                <th>Poste</th>
+                <th>Poste :</th>
                 <td>{{ job.poste }}</td>
             </tr>
             <tr>
-                <th>Type_job</th>
+                <th>Domaine :</th>
                 <td>{{ job.typeJob }}</td>
             </tr>
             <tr>
-                <th>Company</th>
+                <th>Compagnie :</th>
                 <td>{{ job.company }}</td>
             </tr>
             <tr>
-                <th>City</th>
+                <th>Ville :</th>
                 <td>{{ job.city }}</td>
             </tr>
             <tr>
-                <th>Description</th>
+                <th>Description :</th>
                 <td>{{ job.description }}</td>
             </tr>
             <tr>
-                <th>Logo</th>
+                <th>Logo :</th>
                 <td>{{ job.logo }}</td>
             </tr>
             <tr>
-                <th>Start_date</th>
+                <th>Début :</th>
                 <td>{{ job.startDate ? job.startDate|date('Y-m-d') : '' }}</td>
             </tr>
             <tr>
-                <th>End_date</th>
+                <th>Fin :</th>
                 <td>{{ job.endDate ? job.endDate|date('Y-m-d') : '' }}</td>
             </tr>
         </tbody>
     </table>
 
-    <a href="{{ path('job_index') }}">back to list</a>
+    <a href="{{ path('job_index') }}">Retour à la liste</a>
 
-    <a href="{{ path('job_edit', {'id': job.id}) }}">edit</a>
+    <a href="{{ path('job_edit', {'id': job.id}) }}">Modifier</a>
 
     {{ include('job/_delete_form.html.twig') }}
 {% endblock %}
