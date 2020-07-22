@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formation{% endblock %}
+
+{% block body %}
+    <h1>Formation</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ formation.id }}</td>
+            </tr>
+            <tr>
+                <th>School</th>
+                <td>{{ formation.school }}</td>
+            </tr>
+            <tr>
+                <th>Degree</th>
+                <td>{{ formation.degree }}</td>
+            </tr>
+            <tr>
+                <th>Field_of_study</th>
+                <td>{{ formation.fieldOfStudy }}</td>
+            </tr>
+            <tr>
+                <th>Year_of_start</th>
+                <td>{{ formation.yearOfStart }}</td>
+            </tr>
+            <tr>
+                <th>Year_of_end</th>
+                <td>{{ formation.yearOfEnd }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('formation_index') }}">back to list</a>
+
+    <a href="{{ path('formation_edit', {'id': formation.id}) }}">edit</a>
+
+    {{ include('formation/_delete_form.html.twig') }}
+{% endblock %}
