@@ -3,38 +3,39 @@
 {% block title %}Formation{% endblock %}
 
 {% block body %}
-    <h1>Formation</h1>
-
+    <div class="centernav">
+        <h1>Formation</h1>
+    </div>
     <table class="table">
         <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ formation.id }}</td>
-            </tr>
-            <tr>
-                <th>School</th>
-                <td>{{ formation.school }}</td>
-            </tr>
-            <tr>
-                <th>Degree</th>
-                <td>{{ formation.degree }}</td>
-            </tr>
-            <tr>
-                <th>Field_of_study</th>
-                <td>{{ formation.fieldOfStudy }}</td>
-            </tr>
-            <tr>
-                <th>Year_of_start</th>
-                <td>{{ formation.yearOfStart }}</td>
-            </tr>
-            <tr>
-                <th>Year_of_end</th>
-                <td>{{ formation.yearOfEnd }}</td>
-            </tr>
+        <tr>
+            <th>Id</th>
+            <td>{{ formation.id }}</td>
+        </tr>
+        <tr>
+            <th>École</th>
+            <td>{{ formation.school }}</td>
+        </tr>
+        <tr>
+            <th>Diplôme</th>
+            <td>{{ formation.degree }}</td>
+        </tr>
+        <tr>
+            <th>Domaine</th>
+            <td>{{ formation.fieldOfStudy }}</td>
+        </tr>
+        <tr>
+            <th>Début</th>
+            <td>{{ formation.yearOfStart }}</td>
+        </tr>
+        <tr>
+            <th>Fin</th>
+            <td>{{ formation.yearOfEnd }}</td>
+        </tr>
         </tbody>
     </table>
 
-    <a href="{{ path('formation_index') }}">back to list</a>
+    <a href="{{ path('formation_index') }}">Retour à la liste</a>
 
     <a href="{{ path('formation_edit', {'id': formation.id}) }}">edit</a>
 

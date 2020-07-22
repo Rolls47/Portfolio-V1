@@ -1,13 +1,16 @@
 {% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
 
-{% block title %}Edit Formation{% endblock %}
+
+{% block title %}Modifier la formation{% endblock %}
 
 {% block body %}
     <h1>Modifier les Formation's</h1>
 
-    {{ include('formation/_form.html.twig', {'button_label': 'Update'}) }}
+    {{ include('formation/_form.html.twig', {'button_label': 'Modifier'}) }}
 
-    <a href="{{ path('formation_index') }}">Retour à la liste</a>
-
+<div class="d-flex mt-5">
     {{ include('formation/_delete_form.html.twig') }}
+    <a href="{{ path('formation_index') }}" class="ml-3">Retour à la liste</a>
+</div>
 {% endblock %}
