@@ -1,4 +1,5 @@
 {% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
 
 {% block title %}New Portfolio{% endblock %}
 
@@ -8,4 +9,5 @@
     {{ include('portfolio/_form.html.twig') }}
 
     <a href="{{ path('portfolio_index') }}">Retour à la liste</a>
-{% endblock %}
+{% endblock %}{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
