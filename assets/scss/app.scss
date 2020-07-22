@@ -1,4 +1,5 @@
 @import "assets/scss/_components/navbar";
+@import "assets/scss/admin";
 
 html{
     height: 100%;
@@ -7,7 +8,16 @@ body {
     background: linear-gradient(to right, #222222, #222222); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 h1{
-    color: #131313;
+    color: white;
+}
+a{
+    color: white;
+}
+th{
+   color: white;
+}
+td{
+ color: white;
 }
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";
