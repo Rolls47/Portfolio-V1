@@ -1,9 +1,13 @@
-body {
-    background-color: white;
+@import "assets/scss/_components/navbar";
+
+html{
+    height: 100%;
 }
-
-// customize some Bootstrap variables
-$primary: darken(#428bca, 20%);
-
+body {
+    background: linear-gradient(to right, #222222, #222222); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1{
+    color: #131313;
+}
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";
