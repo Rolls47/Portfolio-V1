@@ -36,7 +36,7 @@
                 <td>{{ job.endDate ? job.endDate|date('Y-m-d') : '' }}</td>
                 <td>
                     <a href="{{ path('job_show', {'id': job.id}) }}">Voir</a>
-                    <a href="{{ path('job_edit', {'id': job.id}) }}">edit</a>
+                    <a href="{{ path('job_edit', {'id': job.id}) }}">Modifier</a>
                 </td>
             </tr>
         {% else %}

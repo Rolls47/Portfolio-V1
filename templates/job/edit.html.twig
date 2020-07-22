@@ -1,13 +1,16 @@
 {% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
 
-{% block title %}Edit Job{% endblock %}
+
+{% block title %}Modifier les Job's{% endblock %}
 
 {% block body %}
     <h1>Modifier les Job's</h1>
 
-    {{ include('job/_form.html.twig', {'button_label': 'Update'}) }}
+    {{ include('job/_form.html.twig', {'button_label': 'Modifier'}) }}
 
-    <a href="{{ path('job_index') }}">Retour à la liste</a>
-
-    {{ include('job/_delete_form.html.twig') }}
+    <div class="d-flex mt-5">
+        {{ include('job/_delete_form.html.twig') }}
+        <a href="{{ path('job_index') }}" class="ml-3">Retour à la liste</a>
+    </div>
 {% endblock %}
