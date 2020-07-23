@@ -25,6 +25,11 @@ td {
     color: white;
 }
 
+.shadow {
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+    background-color: #191919;
+}
+
 // MAIN CONTENT
 .main-div {
     height: 800px;
@@ -39,11 +44,6 @@ td {
 }
 
 // SKILL
-.skill-div {
-    background-color: #191919;
-    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
-
-}
 
 .image-skill {
     height: 75px;
@@ -78,6 +78,9 @@ td {
     height: 100px;
     width: 100px;
 }
+
+// PORTFOLIO
+
 
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";
