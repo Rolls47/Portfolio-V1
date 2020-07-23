@@ -10,10 +10,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+/**
+ * Class ContentController
+ * @package App\Controller
+ * @Route("/")
+ */
 class ContentController extends AbstractController
 {
     /**
-     * @Route("/content", name="content")
+     * @Route("/", name="content")
      * @param SkillRepository $skillRepository
      * @param JobRepository $jobRepository
      * @param FormationRepository $formationRepository
