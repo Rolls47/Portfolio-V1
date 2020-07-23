@@ -3,5 +3,14 @@
 {% block title %}{% endblock %}
 
 {% block body %}
-{% include '_components/_main.html.twig' %}
+    <div>
+        {% include '_components/_main.html.twig' %}
+    </div>
+
+    <div id="job">
+        {% include '_components/_job.html.twig' %}
+    </div>
+    <div id="skill">
+        {% include '_components/_skill.html.twig' %}
+    </div>
 {% endblock %}

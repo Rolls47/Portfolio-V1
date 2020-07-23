@@ -1,0 +1,9 @@
+<div class="d-flex  flex-column justify-content-center align-items-center main-div">
+    <h1 class="mt-5 mb-5 d-flex justify-content-center">Mes Compétences</h1>
+    <div class="d-flex justify-content-around skill-div">
+        {% for skill in skills %}
+            <img src="{{ skill.image }}" alt="" class="image-skill d-flex justify-content-around">
+        {% endfor %}
+    </div>
+</div>
+
