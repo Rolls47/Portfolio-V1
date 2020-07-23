@@ -1,11 +1,11 @@
-<div>
+<div class="shadow">
     <div>
         <h1 class="mt-5 mb-5 d-flex justify-content-center">Mes expériences professionnelles</h1>
     </div>
     <div class="d-flex justify-content-around mt-5 mb-5">
         {% for job in jobs %}
             <div class="card d-flex justify-content-around">
-                <div class="card-body">
+                <div class="card-body ">
                     <h5 class="card-title">{{ job.poste }}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">{{ job.company }} - {{ job.typejob }}</h6>
                     <img src="{{ job.logo }}" alt="logo" class="job-logo">
