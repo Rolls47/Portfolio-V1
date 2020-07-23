@@ -34,6 +34,10 @@ class FormationType extends AbstractType
                 'label' => 'Fin :',
                 'label_attr' => ['class' => 'text-admin-form'],
             ])
+            ->add('logo', TextType::class, [
+                'label' => 'Logo :',
+                'label_attr' => ['class' => 'text-admin-form'],
+            ])
         ;
     }
 
