@@ -16,6 +16,7 @@
                 <th>Domaine</th>
                 <th>Début</th>
                 <th>Fin</th>
+                <th>logo</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -28,6 +29,7 @@
                 <td>{{ formation.fieldOfStudy }}</td>
                 <td>{{ formation.yearOfStart }}</td>
                 <td>{{ formation.yearOfEnd }}</td>
+                <td>{{ formation.logo }}</td>
                 <td>
                     <a href="{{ path('formation_show', {'id': formation.id}) }}">Voir</a>
                     <a href="{{ path('formation_edit', {'id': formation.id}) }}">Modifier</a>
