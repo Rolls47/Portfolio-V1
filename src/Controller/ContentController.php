@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\FormationRepository;
 use App\Repository\JobRepository;
 use App\Repository\SkillRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -16,11 +17,12 @@ class ContentController extends AbstractController
      * @param JobRepository $jobRepository
      * @return Response
      */
-    public function index(SkillRepository $skillRepository, JobRepository $jobRepository): Response
+    public function index(SkillRepository $skillRepository, JobRepository $jobRepository, FormationRepository $formationRepository): Response
     {
         return $this->render('index.html.twig', [
             'skills' => $skillRepository->findAll(),
-            'jobs'   => $jobRepository->findBy([], ['start_date' => 'DESC'])
+            'jobs'   => $jobRepository->findBy([], ['start_date' => 'DESC']),
+            'formations'   => $formationRepository->findBy([], ['year_of_start' => 'DESC'])
         ]);
     }
 }
