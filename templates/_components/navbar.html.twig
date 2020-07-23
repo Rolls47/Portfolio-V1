@@ -1,20 +1,23 @@
-<ul class="nav justify-content-around flex-column vh-100">
-    <div class="centernav">
-        <img src="{{ asset('build/images/Portrait.png') }}" class="portrait-nav" alt="logo">
-    </div>
-    <li class="nav-item centernav">
-        <a class="nav-link active" href="">Quentin 'Rolls' Adadain</a>
-    </li>
-    <li class="nav-item centernav">
-        <a class="nav-link active" href="#">Portflio</a>
-    </li>
-    <li class="nav-item centernav">
-        <a class="nav-link active" href="">Expérience</a>
-    </li>
-    <li class="nav-item centernav">
-        <a class="nav-link active" href="">Compétence</a>
-    </li>
-    <li class="nav-item centernav">
-        <a class="nav-link active" href="">Formation</a>
-    </li>
-</ul>
+<div>
+
+    <ul class="nav justify-content-around flex-column vh-100 position-fixed">
+        <div class="centernav">
+            <img src="{{ asset('build/images/Portrait.png') }}" class="portrait-nav" alt="logo">
+        </div>
+        <li class="nav-item centernav">
+            <a class="nav-link active" href="{{ path('content') }}">Quentin 'Rolls' Adadain</a>
+        </li>
+        <li class="nav-item centernav">
+            <a class="nav-link active" href="#">Portflio</a>
+        </li>
+        <li class="nav-item centernav">
+            <a class="nav-link active" id="toJob" href="">Expérience</a>
+        </li>
+        <li class="nav-item centernav">
+            <a class="nav-link active" id="toSkill" href="#skill">Compétence</a>
+        </li>
+        <li class="nav-item centernav">
+            <a class="nav-link active" href="">Formation</a>
+        </li>
+    </ul>
+</div>
