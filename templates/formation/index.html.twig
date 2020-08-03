@@ -29,7 +29,7 @@
                 <td>{{ formation.fieldOfStudy }}</td>
                 <td>{{ formation.yearOfStart }}</td>
                 <td>{{ formation.yearOfEnd }}</td>
-                <td>{{ formation.logo }}</td>
+                <td><img class="formation-logo" src="{{ formation.logo }}" alt="logo-school"></td>
                 <td>
                     <a href="{{ path('formation_show', {'id': formation.id}) }}">Voir</a>
                     <a href="{{ path('formation_edit', {'id': formation.id}) }}">Modifier</a>

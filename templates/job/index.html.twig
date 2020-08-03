@@ -31,7 +31,7 @@
                 <td>{{ job.company }}</td>
                 <td>{{ job.city }}</td>
                 <td>{{ job.description }}</td>
-                <td>{{ job.logo }}</td>
+                <td><img class="job-logo" src="{{ job.logo }}" alt="logo-skill"></td>
                 <td>{{ job.startDate ? job.startDate|date('Y-m-d') : '' }}</td>
                 <td>{{ job.endDate ? job.endDate|date('Y-m-d') : '' }}</td>
                 <td>

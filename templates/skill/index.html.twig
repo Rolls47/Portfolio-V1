@@ -21,7 +21,7 @@
             <tr>
                 <td>{{ skill.id }}</td>
                 <td>{{ skill.name }}</td>
-                <td>{{ skill.image }}</td>
+                <td><img class="logo-icon" src="{{ skill.image }}" alt="logo-skill"></td>
                 <td>
                     <a href="{{ path('skill_show', {'id': skill.id}) }}">Voir</a>
                     <a href="{{ path('skill_edit', {'id': skill.id}) }}">Modifier</a>

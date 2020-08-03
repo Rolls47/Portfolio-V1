@@ -1,11 +1,11 @@
-<div>
+<div class="pb-5">
     <div>
-        <h1 class="mt-5 mb-5 d-flex justify-content-center">Portfolio</h1>
+        <h1 class="pt-5 mb-5 d-flex justify-content-center">Portfolio</h1>
     </div>
-    <div class="container mt-5 mb-5">
-            <div class="row d-flex justify-content-around">
-        {% for portfolio in portfolios %}
-                <div class="card col-4 m-4 p-0">
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-around">
+            {% for portfolio in portfolios %}
+                <div class="card col-4 m-4 p-0 pb-5">
                     <img src="{{ portfolio.image }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{ portfolio.name }}</h5>
@@ -13,8 +13,8 @@
                         <p class="card-text">{{ portfolio.description }}</p>
                         <a href="{{ portfolio.lien }}" target="_blank" class="btn btn-primary">Voir le site</a>
                     </div>
-            </div>
-        {% endfor %}
                 </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
