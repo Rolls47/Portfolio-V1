@@ -47,7 +47,6 @@ class SkillFixtures extends Fixture
             $skill->setImage($data['image']);
             $manager->persist($skill);
         }
-
         $manager->flush();
     }
 }

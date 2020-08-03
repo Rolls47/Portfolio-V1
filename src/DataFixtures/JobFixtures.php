@@ -57,7 +57,6 @@ class JobFixtures extends Fixture
             $job->setStartDate($startWork);
             $job->setEndDate($endWork);
             $manager->persist($job);
-
         }
         $manager->flush();
     }
