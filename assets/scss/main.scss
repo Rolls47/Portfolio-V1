@@ -1,0 +1,74 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to right, #222222, #222222); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    h1, h2, h3, h4, h5 {
+        color: white;
+        font-family: 'Titillium Web Bold', sans-serif;
+    }
+    a, p, th, td {
+        color: white;
+        font-family: "Roboto regular", sans-serif;
+    }
+}
+
+.shadow {
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+    background-color: #191919;
+}
+
+// MAIN CONTENT
+.main-div {
+    height: 800px;
+}
+
+.name-main {
+    height: 20%;
+}
+
+.role-main {
+    height: 20%;
+}
+
+// SKILL
+
+.image-skill {
+    height: 75px;
+    width: 75px;
+}
+
+// JOB
+.job-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.card {
+    width: 450px;
+}
+
+.card-body {
+    background-color: #191919;
+}
+
+.card-title {
+    color: white;
+}
+
+.card-text {
+    color: white;
+}
+
+// FORMATION
+
+.formation-logo {
+    height: 100px;
+    width: 100px;
+}
+
+// PORTFOLIO
+

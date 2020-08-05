@@ -20,6 +20,7 @@ import './ancreSkill';
 import './ancrePortfolio';
 import './ancreJob';
 import './ancreFormation';
+import './typeScript';
 // or you can include specific pieces
 // require('bootstrap/js/dist/tooltip');
 // require('bootstrap/js/dist/popover');
@@ -27,3 +28,4 @@ import './ancreFormation';
 $(document).ready(function() {
     $('[data-toggle="popover"]').popover();
 });
+
