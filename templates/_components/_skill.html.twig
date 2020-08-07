@@ -1,11 +1,12 @@
-<div class="d-flex  flex-column mt-5 pb-5">
-    <h1 class="pt-5 mb-5 d-flex justify-content-center">Mes Compétences</h1>
-    <div class="d-flex flex-column justify-content-center h-100">
-        <div class="d-flex justify-content-around skill-div align-content-center flex-wrap">
-            {% for skill in skills %}
-                <img src="{{ skill.image }}" alt="" class="image-skill d-flex justify-content-around">
-            {% endfor %}
-        </div>
+<div class="row mb-5">
+    <div class="col-12 d-flex justify-content-center">
+        <h1>Mes Compétences</h1>
     </div>
 </div>
-
+<div class="row justify-content-center align-content-center">
+    {% for skill in skills %}
+        <div class="col-3 text-center">
+            <img src="{{ skill.image }}" alt="" class="image-skill">
+        </div>
+    {% endfor %}
+</div>

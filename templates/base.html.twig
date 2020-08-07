@@ -7,14 +7,16 @@
     {{ encore_entry_link_tags('app') }}
 </head>
 <body>
-<div class="d-flex vh-100">
-    <header class="col-2 pl-0 pr-0">
-        {% include '_components/navbar.html.twig' %}
-    </header>
-    <main class="col-10">
-        {% block body %}
-        {% endblock %}
-    </main>
+<div class="container-fluid vh-100">
+    <div class="row">
+        <header class="col-2 d-none d-lg-block d-xl-block pl-0 pr-0">
+            {% include '_components/navbar.html.twig' %}
+        </header>
+        <main class="col-12 col-lg-10 col-xl-10">
+            {% block body %}
+            {% endblock %}
+        </main>
+    </div>
 </div>
 {% block javascripts %}{% endblock %}
 {{ encore_entry_script_tags('app') }}
