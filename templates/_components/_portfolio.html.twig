@@ -1,0 +1,21 @@
+<div class="pb-5">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="pt-5 mb-5 d-flex justify-content-center">Portfolio</h1>
+        </div>
+    </div>
+    <div class="row d-flex mt-5 justify-content-around">
+        {% for portfolio in portfolios %}
+            <div class="card col-10 col-lg-4 col-md-8 m-4 p-0">
+                <img src="{{ portfolio.image }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ portfolio.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ portfolio.technology }}</h6>
+                    <p class="card-text">{{ portfolio.description }}</p>
+                    <a href="{{ portfolio.lien }}" target="_blank" class="btn btn-primary">Voir le site</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+

@@ -1,0 +1,22 @@
+@import "assets/scss/_components/navbar";
+@import "assets/scss/_components/typescript";
+@import "assets/scss/admin";
+@import "assets/scss/main";
+@import "assets/scss/responsive";
+
+@font-face {
+    font-family: 'Titillium Web Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Titillium Web Bold'), local('Titillium Web Bold'),
+    url('../fonts/Titillium_Web/TitilliumWeb-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto regular'), local('Roboto regular'),
+    url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+// the ~ allows you to reference things in node_modules
+@import "~bootstrap/scss/bootstrap";

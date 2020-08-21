@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div>
+            {% include '_components/_main.html.twig' %}
+        </div>
+        <div id="portfolio" class="shadow">
+            {% include '_components/_portfolio.html.twig' %}
+        </div>
+        <div id="job" class="shadow">
+            {% include '_components/_job.html.twig' %}
+        </div>
+        <div id="skill" class="shadow py-5 mt-5">
+            {% include '_components/_skill.html.twig' %}
+        </div>
+        <div id="formation" class="shadow">
+            {% include '_components/_formation.html.twig' %}
+        </div>
+    </div>
+{% endblock %}

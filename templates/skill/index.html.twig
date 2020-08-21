@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Skill index{% endblock %}
+
+{% block body %}
+    <div class="centernav">
+    <h1>Skill's</h1>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Technologie</th>
+                <th>Image</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for skill in skills %}
+            <tr>
+                <td>{{ skill.id }}</td>
+                <td>{{ skill.name }}</td>
+                <td><img class="logo-icon" src="{{ skill.image }}" alt="logo-skill"></td>
+                <td>
+                    <a href="{{ path('skill_show', {'id': skill.id}) }}">Voir</a>
+                    <a href="{{ path('skill_edit', {'id': skill.id}) }}">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">Pas de skill</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('skill_new') }}">Nouveau skill</a>
+{% endblock %}

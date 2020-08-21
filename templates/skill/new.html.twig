@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block title %}New Skill{% endblock %}
+
+{% block body %}
+    <h1>Création d'un nouveau skill</h1>
+
+    {{ include('skill/_form.html.twig') }}
+
+    <a href="{{ path('skill_index') }}">Retour à la liste</a>
+{% endblock %}

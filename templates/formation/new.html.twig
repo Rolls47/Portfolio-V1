@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block title %}New Formation{% endblock %}
+
+{% block body %}
+    <h1>Creation nouvelle Formation</h1>
+
+    {{ include('formation/_form.html.twig') }}
+
+    <a href="{{ path('formation_index') }}">Retour à la liste</a>
+{% endblock %}

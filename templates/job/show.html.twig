@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Job{% endblock %}
+
+{% block body %}
+    <h1>Job</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ job.id }}</td>
+            </tr>
+            <tr>
+                <th>Poste :</th>
+                <td>{{ job.poste }}</td>
+            </tr>
+            <tr>
+                <th>Domaine :</th>
+                <td>{{ job.typeJob }}</td>
+            </tr>
+            <tr>
+                <th>Compagnie :</th>
+                <td>{{ job.company }}</td>
+            </tr>
+            <tr>
+                <th>Ville :</th>
+                <td>{{ job.city }}</td>
+            </tr>
+            <tr>
+                <th>Description :</th>
+                <td>{{ job.description }}</td>
+            </tr>
+            <tr>
+                <th>Logo :</th>
+                <td><img class="job-logo" src="{{ job.logo }}" alt="logo-skill"></td>
+            </tr>
+            <tr>
+                <th>Début :</th>
+                <td>{{ job.startDate ? job.startDate|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Fin :</th>
+                <td>{{ job.endDate ? job.endDate|date('Y-m-d') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('job_index') }}">Retour à la liste</a>
+
+    <a href="{{ path('job_edit', {'id': job.id}) }}">Modifier</a>
+
+    {{ include('job/_delete_form.html.twig') }}
+{% endblock %}
