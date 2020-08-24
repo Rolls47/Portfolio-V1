@@ -2,7 +2,18 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta property=og:locale content=fr_FR>
+    <meta property=og:type content=website>
+    <meta property=og:title content="Portfolio Développeur Web - Quentin ADADAIN">
+    <meta property=og:description content="Portfolio réalisé en PHP Symfony">
+    <meta property=og:url content=https://adadain.com/ >
+    <meta property=og:site_name content="Quentin ADADAIN - Portfolio">
+    <meta property=og:image:width content=1785>
+    <meta property=og:image:height content=796>
+    <title>{% block title %}Portfolio : Quentin ADADAIN{% endblock %}</title>
     {% block stylesheets %}{% endblock %}
     {{ encore_entry_link_tags('app') }}
 </head>
@@ -18,7 +29,17 @@
         </main>
     </div>
 </div>
-{% block javascripts %}{% endblock %}
+{% block javascripts %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176179638-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176179638-1');
+    </script>
+{% endblock %}
 {{ encore_entry_script_tags('app') }}
 </body>
 </html>
